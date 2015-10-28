@@ -1,0 +1,21 @@
+{
+    "name": "cvuorinen/raspiphpant",
+    "description": "RaspiPHPant is a tweet bot running on Raspberry Pi with PHP",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Carl Vuorinen",
+            "email": "carl.vuorinen@gmail.com"
+        }
+    ],
+    "require": {
+        "dg/twitter-php": "^3.5",
+        "cvuorinen/raspicam-php": "*@dev",
+        "aura/cli": "^2.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "Cvuorinen\\RaspiPHPant\\": "src"
+        }
+    }
+}
