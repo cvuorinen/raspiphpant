@@ -1,0 +1,31 @@
+<?php
+
+/**
+ * Copy this file as parameters.php and modify values accordingly
+ */
+return [
+    // Twitter check interval
+    'interval' => 10,
+    // Picture folder
+    'pics-dir' => __DIR__ . '/../pics',
+    // Hashtag that is automatically added to all tweets (optional)
+    'hashtag' => null,
+    /**
+     * Parameters for twitter-php
+     * @see https://github.com/dg/twitter-php
+     */
+    'twitter' => [
+        'access-token' => '***********************',
+        'access-token-secret' => '****************',
+        'consumer-key' => '***********************',
+        'consumer-secret' => '********************',
+    ],
+    /**
+     * Parameters for raspicam-php
+     * @see https://github.com/cvuorinen/raspicam-php
+     */
+    'raspicam' => [
+        'timeout' => 1,
+        'quality' => 85,
+    ],
+];
