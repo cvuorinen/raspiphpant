@@ -13,9 +13,15 @@
         "cvuorinen/raspicam-php": "*@dev",
         "aura/cli": "^2.1"
     },
+    "require-dev": {
+        "crysalead/kahlan": "^1.2"
+    },
     "autoload": {
         "psr-4": {
             "Cvuorinen\\RaspiPHPant\\": "src"
         }
+    },
+    "scripts": {
+        "test": "vendor/bin/kahlan"
     }
 }

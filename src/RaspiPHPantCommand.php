@@ -229,7 +229,7 @@ class RaspiPHPantCommand
         if (mb_strlen($replyMessage) + mb_strlen('"' . $tweetText . '"') > self::CHAR_LIMIT) {
             $length = self::CHAR_LIMIT - mb_strlen($replyMessage . '""...');
             $split = wordwrap($tweetText, $length, "\n");
-            $tweetText = reset(explode("\n", $split)) . '...';
+            $tweetText = explode("\n", $split)[0] . '...';
         }
 
         $replyMessage .= '"' . $tweetText . '"';
